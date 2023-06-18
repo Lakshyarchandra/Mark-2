@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "learning-angular-firebas-63825": {
+      "hosting": {
+        "app1": [
+          "learning-angular-firebas-63825"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "learning-angular-firebas-63825"
+  }
+}

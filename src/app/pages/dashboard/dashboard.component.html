@@ -11,37 +11,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Colgate</td>
-        <td>Mint and Salt</td>
-        <td>₹90</td>
-        <th><button class="btn btn-outline-secondary">Edit</button></th>
-        <th><button class="btn btn-dark">Delete</button></th>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <th><button class="btn btn-outline-secondary" routerLink="/dashboard/edit-product/+product.id">Edit</button></th>
+        <th><button class="btn btn-dark" >Delete</button></th>
       </tr>
-      <tr class="active-row">
-        <td>2</td>
-        <td>Close-up</td>
-        <td>Extra Freshness</td>
-        <td>₹85</td>
-        <th><button class="btn btn-outline-secondary">Edit</button></th>
-        <th><button class="btn btn-dark">Delete</button></th>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Meshwak</td>
-        <td>Natural Herbs</td>
-        <td>₹65</td>
-        <th><button class="btn btn-outline-secondary">Edit</button></th>
-        <th><button class="btn btn-dark">Delete</button></th>
-      </tr>
-      <tr class="active-row">
-        <td>4</td>
-        <td>Pepsodent</td>
-        <td>Extra Whitening</td>
-        <td>₹75</td>
-        <th><button class="btn btn-outline-secondary">Edit</button></th>
-        <th><button class="btn btn-dark">Delete</button></th>
-      </tr>
-    </tbody>
   </table>
